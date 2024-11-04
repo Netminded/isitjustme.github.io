@@ -5,11 +5,11 @@ html, body, #gatsby-focus-wrapper, #___gatsby {
   }
   
   html {
-    background-color: #FFFFFF;
+    background-color: #f7f2ea;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Nueton", serif;
+    font-family: "Calistoga", serif;
   }
   
   p, ul, li {
@@ -158,7 +158,7 @@ nav {
   }
   
   .menu-scrolling-hero {
-    background: linear-gradient(180deg, rgba(233, 239, 244, 0.7) 31.78%, rgba(255, 255, 255, 0) 90.59%) no-repeat;
+    background: #f7f2ea;
   }
 
   @media screen and (max-width: 1199.20px) {
@@ -289,6 +289,7 @@ nav {
   /* Hero */
   main {
     height: calc(100% - 62px);
+    background: #f7f2ea;
   }
 
   #CircleGreen {
@@ -317,10 +318,6 @@ nav {
     position: relative;
     z-index: 1;
   }
-
-  .hero-container .col-lg-6 {
-    align-self: center;
-  }
   
   .hero-content {
     display: block;
@@ -328,8 +325,8 @@ nav {
   }
   
   .hero-image {
-    width: 80%;
-    margin-left: auto;
+    width: 90%;
+    margin: 0 auto;
   }
   
   @media screen and (max-width: 991px) {
@@ -364,15 +361,19 @@ nav {
     font-weight: 700;
     font-size: 50px;
     line-height: 1;
+    margin-top: 50px;
     margin-bottom: 20px;
+    text-align: center;
   }
   
   .hero-container h3 {
-    color: #4C4D55;
+    color: #3A3B40;
     font-size: 22px;
-    margin-bottom: 50px;
+    margin: 0 auto 50px auto;
     font-weight: 400;
     font-family: "Karla", sans-serif;
+    text-align: center;
+    width: 60%;
   }
   
   @media screen and (min-width: 601px) and (max-width: 1199.20px) {
@@ -412,8 +413,14 @@ nav {
   }
   
   .hero-container .hero-cta {
+    margin: 0 20px;
     padding-bottom: 10px;
     display: flex;
+    justify-content: center;
+  }
+
+  .hero-container .btn-container {
+    margin: 0 8px;
   }
 
   .hero-container .btn-container a {
@@ -483,8 +490,8 @@ nav {
   .arrow span {
     color: #28242D;
     position: relative;
-    bottom: 25px;
-    right: 35px;
+    bottom: 53px;
+    right: -30px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
@@ -516,7 +523,6 @@ nav {
   }
 
   .about-info {
-    background: #EEECFB;
     padding-top: 90px;
     padding-bottom: 80px;
   }
@@ -529,9 +535,8 @@ nav {
   }
 
   .about-info .highlight-heading {
-    font-family: 'Neuton', sans-serif;
+    font-family: 'Calistoga', serif;
     color: #28242D;
-    font-weight: 700;
     font-size: 30px;
     margin-bottom: 40px;
     margin-left: auto;
@@ -546,24 +551,19 @@ nav {
   }
 
   .about-container p {
-    color: #4C4D55;
+    color: #3A3B40;
     font-size: 20px;
     font-weight: 400;
-  }
-
-  @media screen and (max-width: 600px) {
-    .about-container p {
-      font-size: 20px;
-    }
   }
 
   .about-container .text-accent {
     font-weight: 600;
   }
 
-  .about-profiles {
-    margin-top: 110px;
-    margin-bottom: 20px;
+  .features-list-container {
+    background: #E8DFD2;
+    border-radius: 15px;
+    padding: 90px 40px 80px 40px;
   }
 
   .profile-first, .profile-middle, .profile-last {
@@ -571,82 +571,25 @@ nav {
     height: 100%;
   }
 
-  @media screen and (max-width: 600px) {
-    .profile-first {
-      width: 98%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
   .profile-text {
     display: flex;
     align-items: center;
   }
 
-  @media screen and (max-width: 767.20px) {
-    .about-profiles .row:nth-child(1) .profile-text-container, .about-profiles .row:nth-child(2) .profile-text-container {
-      margin-bottom: 60px;
-    } 
-
-    .profile-text-container {
-      margin-top: 40px;
-      margin-left: 24px !important;
-      margin-right: 24px !important;
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    .about-profiles .row:nth-child(1) .profile-text-container, .about-profiles .row:nth-child(2) .profile-text-container {
-      margin-bottom: 40px;
-    }
-
-    .profile-text-container {
-      margin-left: 0 !important;
-      margin-right: 0 !important;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  }
-
   .about-profiles h5 {
-    font-family: 'Neuton', serif;
+    font-family: 'Calistoga', serif;
     font-size: 22px;
-    font-weight: 700;
     color: #28242D;
-  }
-
-  .about-profiles h6 {
-    font-size: 18px;
-    font-weight: 400;
-    color: #525252;
   }
 
   /* Services */
   .services-container {
     width: 100%;
-    background-size: cover;
-    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 90px;
     padding-bottom: 100px;
-    color: #fff;
-    scroll-margin-top: 100px;
-  }
-
-   /* Fix fixed background issue on iOS devices */
-   @supports (-webkit-overflow-scrolling: touch) {
-    .services-container {
-      background-attachment: scroll;
-    }
-  }
-
-  @media screen and (max-width: 1199.20px) {
-    .services-container {
-      scroll-margin-top: 50px;
-    }
   }
 
   @media screen and (max-width: 600px) {
@@ -657,14 +600,12 @@ nav {
   }
 
   .services-container .highlight-heading {
-    font-family: 'Neuton', serif;
+    font-family: 'Calistoga', serif;
     color: #28242D;
-    font-weight: 700;
     font-size: 30px;
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-    z-index: 1;
   }
 
   @media screen and (max-width: 452px) {
@@ -674,10 +615,13 @@ nav {
   }
 
   .services-panel {
-    background: #6D55F7;
+    background: linear-gradient(159deg, #6D55F7 5.45%, rgba(109, 85, 247, 0.80) 75.22%), url('../images/Panel_Bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 15px;
+    color: #fff;
     padding: 40px;
-    position: relative;
     margin-top: 20px;
     height: 85%;
   }
@@ -717,7 +661,10 @@ nav {
   }
 
   .services-container .row:nth-child(2) .col-lg-4:nth-child(2) .services-panel {
-    background: #6D55F7;
+    background: linear-gradient(159deg, #6D55F7 5.45%, rgba(109, 85, 247, 0.80) 75.22%), url('../images/Panel_Alt_Bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   @media screen and (max-width: 991.20px) {
@@ -742,60 +689,19 @@ nav {
     }
   }
 
-  .services-panel .panel-number {
-    position: absolute;
-    left: calc(50% - 72px);
-    top: -65px;
-    width: 140px;
-    height: 140px;
-  }
-
-  .services-panel .panel-number svg {
-    width: 140px;
-    height: 140px;
-  }
-
-  .services-panel #Green_Accent_One {
-    transform: rotate(0deg);
-    transform-origin: 54px 51px;
-  }
-
-  .services-panel #Green_Accent_Two {
-    transform: rotate(0deg);
-    transform-origin: 54px 51px;
-  }
-
-  .services-panel #Green_Accent_Three {
-    transform: rotate(0deg);
-    transform-origin: 54px 51px;
-  }
-
-  .animate-number {
-    animation: rotate-green-accent .7s ease-in forwards;
-    animation-delay: 1s;
-  }
-
-  @keyframes rotate-green-accent {
-    0% {
-      transform: rotate(0deg);
-      transform-origin: 54px 51px;
-    }
-    30% {
-      transform: rotate(180deg);
-      transform-origin: 54px 51px;
-    }
-    100% {
-      transform: rotate(360deg);
-      transform-origin: 54px 51px;
-    }
-  }
-
   .services-container .services-panel h6 {
-    font-family: 'Neuton', serif;
+    font-family: 'Calistoga', serif;
     font-size: 22px;
-    font-weight: 700;
     margin-top: 30px;
     margin-bottom: 20px;
+  }
+
+  .services-container .fa-circle-plus, .services-container .fa-heart-pulse {
+    font-size: 24px;
+  }
+
+  .services-container .fa-user-group {
+    font-size: 22px;
   }
 
   .services-container .services-panel p {
@@ -826,9 +732,8 @@ nav {
   }
 
   .platform-container .highlight-heading {
-    font-family: 'Neuton', sans-serif;
+    font-family: 'Calistoga', serif;
     color: #28242D;
-    font-weight: 700;
     font-size: 30px;
     margin-bottom: 40px;
     margin-left: auto;
@@ -851,7 +756,7 @@ nav {
   }
 
   .platform-container p {
-    color: #4C4D55;
+    color: #3A3B40;
     font-size: 22px;
     font-weight: 400;
   }
@@ -875,17 +780,49 @@ nav {
   }
 
   /* Who Is It For */
-  #whoIsThisFor .about-info {
-    background: #E9EFF4;
+  .whofor-container {
+    background: #E8DFD2;
+    padding: 90px 20px 80px 20px;
+    margin: 0 auto;
+    border-radius: 15px;
+  }
+
+  .whofor-container .highlight-heading {
+    font-family: 'Calistoga', serif;
+    color: #28242D;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .whofor-container .col-lg-4 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .whofor-container .fa-house-user, .whofor-container .fa-house-laptop, .whofor-container .fa-building {
+    font-size: 22px;
+    color: #28242D;
+  }
+
+  .whofor-container p {
+    color: #3A3B40;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .whofor-container .text-accent {
+    font-size: 22px;
+    font-weight: 500;
   }
 
   /* Contact */
   .contact-container {
     background: #6D55F7;
-    padding-top: 90px;
-    padding-bottom: 80px;
+    padding: 90px 40px 80px 40px;
     border-radius: 15px;
-    margin: 0 20px 20px 20px;
+    margin: 0 auto 20px auto;
   }
 
   @media screen and (max-width: 600px) {
@@ -896,9 +833,8 @@ nav {
   }
 
   .contact-container .highlight-heading {
-    font-family: 'Neuton', serif;
+    font-family: 'Calistoga', serif;
     color: #fff;
-    font-weight: 700;
     font-size: 30px;
     margin-bottom: 40px;
     margin-left: auto;

@@ -55,7 +55,7 @@ module.exports = {
                 fonts: [
                   `poppins\:400,500,600,700`,
                   `karla\:400,500`,
-                  `neuton\:700`
+                  `calistoga\:400`
                 ],
                 display: 'swap'
               }

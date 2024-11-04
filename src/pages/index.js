@@ -4,16 +4,13 @@ import { useState } from 'react'
 import { Waypoint } from 'react-waypoint'
 import { StaticImage } from 'gatsby-plugin-image'
 import HeroBg from "../images/IsItJustMe"
-
+import InstantAlerts from "../images/InstantAlerts.svg"
+import CommunitySharing from "../images/CommunitySharing.svg"
+import PrivacySecurity from "../images/PrivacySecurity.svg"
+import HowItWorksSection from "../components/how-it-works"
+import WhoForSection from "../components/who-for"
 import CtaSection from "../components/cta"
 import ContactSection from "../components/contact"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-    faUsersRectangle,
-    fa1,
-    fa2,
-    fa3
-  } from '@fortawesome/free-solid-svg-icons'
 
 
 const scrollTo = (e, sectionName) => {
@@ -32,28 +29,19 @@ const IndexPage = () => {
                 <div className="hero-container-sub">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-6 order-lg-2">
-                                <div className="hero-image">
-                                    <div className="hero-image-container">
-                                        <HeroBg />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6 order-lg-1">
+                            <div className="col-12">
                                 <div className="hero-content">
                                     <h1>Is the Internet Down?<br/>Find Out Together!</h1>
                                     <h3>Create or join a community to monitor your Wi-Fi health instantly. Get the free Chrome extension for home and work.</h3>
                                     <div className="hero-cta">
                                         <div className="btn-container">
-                                            <a className="btn" href="javascript:void(0)" onClick={(e) => scrollTo(e, "about")}>Learn More</a>
-                                        </div>
-                                        <div className="btn-container">
                                             <a className="btn hero-btn-last" href="" target="_blank" rel="noreferrer">Add to Chrome</a> 
                                         </div>
-                                        <div className="arrow">
-                                            <StaticImage src="../images/Arrow.svg" alt="" />
-                                            <span>It's free!</span>
-                                        </div>
+                                    </div>
+                                </div>
+                                <div className="hero-image">
+                                    <div className="hero-image-container">
+                                        <HeroBg />
                                     </div>
                                 </div>
                             </div>
@@ -67,24 +55,33 @@ const IndexPage = () => {
                 <div className="about-info">
                     <div className="container">
                         <div className="row">
-                            <div className="col-12 text-center">
-                                <h2 className="highlight-heading"><span id="highlight"></span>Why You'll Love It</h2>
-                                <p className="text-accent">With the "Is It Just Me?" Chrome extension pinned to your toolbar, the icon changes color to reflect your Wi-Fi status—Green means everything’s working fine, Amber indicates some issues, and Red signals a major outage. 
-                                    This makes it easy to tell if the problem is with your Wi-Fi or the Internet. The extension monitors your connection instantly after installation, with no setup needed.</p>
-                                <hr className="divider-small"></hr>
-                                <p>By joining a group of family, friends, or coworkers, you can easily see if others are experiencing the same connectivity issues. If you're online, you'll be able to see if others are offline and any delays or issues will be clearly visible when you are connected.</p>
+                            <div className="col-lg-4">
+                                <h2 className="highlight-heading">Why You'll Love It</h2>
+                                <p><span className="text-accent">Real-Time Wi-Fi Status at a Glance:</span> Your Chrome browser icon changes color from Green (Everything's great), to Amber (Issues detected), to Red (Major outage). No more guessing if it's your Wi-Fi or the Internet.</p>
+                            </div>
+                            <div className="col-lg-4">
+
+                            </div>
+                            <div className="col-lg-4">
+                                <p><span className="text-accent">Visibility of Others' Status:</span> If you're online, you will be able to see if others in your group go offline. If you are offline, however, you won’t be able to tell the status of others. When delays occur, they'll be clearly visible if you're online.</p>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-12">
+                                <p><span className="text-accent">Stay Connected with Your Community:</span> By joining a group of family, friends, or coworkers, you can instantly see if others in your group are experiencing the same connection problems. It's like a "Wi-Fi health check" with your trusted circle.</p>
+                                <p><span className="text-accent">Simple Setup, Zero Hassle:</span> Install in seconds and start monitoring your connection right away. There's nothing to configure—just click, join or create your community, and stay informed!</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </Waypoint>
             <div className="about-profiles">
-                <div className="container">
+                <div className="container features-list-container">
                     <Waypoint>
-                        <div className="row mb-5">
+                        <div className="row">
                             <div className="col-md-4">
                                 <div className="profile-first">
-                                    <StaticImage src="../images/InstantAlerts.svg" alt="" />
+                                    <img src={InstantAlerts} alt="A person stood next to a list of alerts." />
                                 </div>
                             </div>
                             <div className="col-md-8 profile-text">
@@ -99,11 +96,11 @@ const IndexPage = () => {
                         <div className="row">
                             <div className="col-md-4 order-md-2">
                                 <div className="profile-middle">
-                                    <StaticImage src="../images/CommunitySharing.svg" alt="" />
+                                    <img src={CommunitySharing} alt="A trio of people sharing internet status." />
                                 </div>
                             </div>
                             <div className="col-md-8 order-md-1 profile-text">
-                                <div className="profile-text-container me-5">
+                                <div className="profile-text-container ms-5 me-5">
                                     <h5>Community Sharing</h5>
                                     <p>Easily connect with others in your group to check if they're facing the same connectivity issues. While online, you'll be able to see if others in your group go offline (if you're offline, you can't see their status).</p>
                                 </div>
@@ -111,10 +108,10 @@ const IndexPage = () => {
                         </div>
                     </Waypoint>
                     <Waypoint>
-                        <div className="row mt-5">
+                        <div className="row">
                             <div className="col-md-4">
                                 <div className="profile-last">
-                                    <StaticImage src="../images/PrivacySecurity.svg" alt="" />
+                                    <img src={PrivacySecurity} alt="A person stood by a padlock symbolising privacy and security." />
                                 </div>
                             </div>
                             <div className="col-md-8 profile-text">
@@ -128,68 +125,8 @@ const IndexPage = () => {
                 </div>
             </div>
         </div>
-        <div id="services" className="services-container">
-            <Waypoint>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12 text-center">
-                            <h2 className="highlight-heading"><span id="highlightServices"></span>How It Works</h2>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <Waypoint>
-                            <div className="col-lg-4">
-                                <div className="services-panel">
-                                    <span className="panel-header">
-                                        <FontAwesomeIcon icon={fa1} /> .
-                                    </span>
-                                    <h6>Install the Extension</h6>
-                                    <p>Add "Is It Just Me?" to your Chrome browser with one click and then pin it to your toolbar.</p>
-                                </div>
-                            </div>
-                        </Waypoint>
-                        <Waypoint>
-                            <div className="col-lg-4">
-                                <div className="services-panel">
-                                    <span className="panel-header">
-                                        <FontAwesomeIcon icon={fa2} /> .
-                                    </span>
-                                    <h6>Monitor Your Internet Health</h6>
-                                    <p>The browser icon will alert you with color changes when your connection weakens or fails.</p>
-                                </div>
-                            </div>
-                        </Waypoint>
-                        <Waypoint>
-                            <div className="col-lg-4">
-                                <div className="services-panel">
-                                    <span className="panel-header">
-                                        <FontAwesomeIcon icon={fa3} /> .
-                                    </span>
-                                    <h6>Create or Join a Group</h6>
-                                    <p>Set up a community with friends, family, or colleagues to share your Internet status and see if others are experiencing the same issues.</p>
-                                </div>
-                            </div>
-                        </Waypoint>
-                    </div>
-                </div>
-            </Waypoint>
-        </div>
-        <div id="whoIsThisFor">
-            <Waypoint>
-                <div className="about-info">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12 text-center">
-                                <h2 className="highlight-heading"><span id="highlight"></span>Who Is This For?</h2>
-                                <p className="text-accent">Home Users: Stop wondering if your Wi-Fi is down or if it's just you—ask the group!</p>
-                                <p>Remote Workers: Stay connected with your team and check for outages before troubleshooting your setup.</p>
-                                <p>Small Offices: Collaborate with coworkers and keep an eye on your office Wi-Fi without needing to call IT right away.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </Waypoint>
-        </div>
+        <HowItWorksSection />
+        <WhoForSection />
         <CtaSection />
         <ContactSection />
     </Layout>
