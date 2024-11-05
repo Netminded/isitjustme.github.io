@@ -24,32 +24,30 @@ const IndexPage = () => {
   const [isHero, setIsHero] = useState(false)
   return (
     <Layout isArticle={false} isHero={isHero} scrollTo={scrollTo}>
-        <Waypoint onEnter={() => setIsHero(true)} onLeave={() => setIsHero(false)}>
-            <div className="hero-container">
-                <div className="hero-container-sub">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12">
-                                <div className="hero-content">
-                                    <h1>Is the Internet Down?<br/>Find Out Together!</h1>
-                                    <h3>Create or join a community to monitor your Wi-Fi health instantly. Get the free Chrome extension for home and work.</h3>
-                                    <div className="hero-cta">
-                                        <div className="btn-container">
-                                            <a className="btn hero-btn-last" href="" target="_blank" rel="noreferrer">Add to Chrome</a> 
-                                        </div>
+        <div className="hero-container">
+            <div className="hero-container-sub">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="hero-content">
+                                <h1>Is the Internet Down?<br/>Find Out Together!</h1>
+                                <h3>Create or join a community to monitor your Wi-Fi health instantly. Get the free Chrome extension for home and work.</h3>
+                                <div className="hero-cta">
+                                    <div className="btn-container">
+                                        <a className="btn hero-btn-last" href="" target="_blank" rel="noreferrer">Add to Chrome</a> 
                                     </div>
                                 </div>
-                                <div className="hero-image">
-                                    <div className="hero-image-container">
-                                        <HeroBg />
-                                    </div>
+                            </div>
+                            <div className="hero-image">
+                                <div className="hero-image-container">
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </Waypoint>
+        </div>
         <div id="about" className="about-container">
             <Waypoint>
                 <div className="about-info">

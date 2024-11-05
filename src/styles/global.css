@@ -1,12 +1,10 @@
 /* General */
-html, body, #gatsby-focus-wrapper, #___gatsby {
+  html, body, #gatsby-focus-wrapper, #___gatsby {
     height: 100%;
     width: 100%;
+    background: #F7F2EA;
   }
   
-  html {
-    background-color: #f7f2ea;
-  }
   
   h1, h2, h3, h4, h5, h6 {
     font-family: "Calistoga", serif;
@@ -168,7 +166,7 @@ nav {
   }
   
   .menu-scrolling-content {
-    background: #e9eff4;
+    background: #F7F2EA;
   }
 
   @media screen and (max-width: 1199.20px) {
@@ -291,35 +289,26 @@ nav {
     height: calc(100% - 62px);
     background: #f7f2ea;
   }
-
-  #CircleGreen {
-    position: absolute;
-    animation: bounce-happy 1s infinite alternate;
-  }
-
-  #CircleAmber {
-    position: absolute;
-    animation: bounce-happy 2s infinite alternate;
-    animation-delay: 0.5s;
-  }
-
-  #CircleRed {
-    position: absolute;
-    animation: bounce-happy 1s infinite alternate;
-    animation-delay: 0.5s;
-  }
   
   .hero-container {
+    background: #E8DFD2;
+    border-radius: 15px;
+    margin: 0 20px 20px 20px;
+    width: calc(100% - 40px);
+    height: 100vh;
+  }
+
+  .hero-container-sub {
+    background: url('../images/Status_Bg.svg') no-repeat;
+    background-size: cover;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
-    z-index: 1;
   }
   
   .hero-content {
+    margin-top: 100px;
     display: block;
     width: 100%;
   }
@@ -332,8 +321,6 @@ nav {
   @media screen and (max-width: 991px) {
     .hero-image {
         width: 60%;
-        /* margin-top: 170px; */
-        /* margin-bottom: 50px; */
         margin-right: auto;
     }
   }
@@ -479,38 +466,6 @@ nav {
     }
   }
 
-  .arrow {
-    position: relative;
-  }
-
-  .arrow div {
-    width: 70px;
-  }
-
-  .arrow span {
-    color: #28242D;
-    position: relative;
-    bottom: 53px;
-    right: -30px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 2px 7px;
-    border-radius: 8px;
-    background: #EEECFB;
-    font-size: 14px;
-  }
-
-
-@keyframes bounce-happy {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-15px);
-  }
-}
-
   /* About */
   .about-container {
     scroll-margin-top: 100px;
@@ -563,7 +518,7 @@ nav {
   .features-list-container {
     background: #E8DFD2;
     border-radius: 15px;
-    padding: 90px 40px 80px 40px;
+    padding: 90px 80px 80px 80px;
   }
 
   .profile-first, .profile-middle, .profile-last {
