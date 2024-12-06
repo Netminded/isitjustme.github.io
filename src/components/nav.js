@@ -27,13 +27,13 @@ const Nav = ({simpleNav, isHero, scrollTo}) => {
                             <a className="nav-link" href="javascript:void(0)" onClick={(e) => scrollTo(e, "about")}>Why You'll Love It</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="javascript:void(0)" onClick={(e) => scrollTo(e, "services")}>How It Works</a>
+                            <a className="nav-link" href="javascript:void(0)" onClick={(e) => scrollTo(e, "howItWorks")}>How It Works</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="javascript:void(0)" onClick={(e) => scrollTo(e, "platform")}>Who Is This For?</a>
+                            <a className="nav-link" href="javascript:void(0)" onClick={(e) => scrollTo(e, "whoIsThisFor")}>Who Is This For?</a>
                         </li>
                         <li className="nav-item">
-                            <a className="btn" href="/">Add to Chrome</a>
+                            <a className="btn" href="https://chromewebstore.google.com/detail/is-it-just-me/imifmefbechjmgapmijpniffjpncmkge" target="_blank" rel="norefferer">Add to Chrome</a>
                         </li>
                     </ul> : 
                     <ul className="navbar-nav ms-auto">

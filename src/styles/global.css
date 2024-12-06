@@ -234,7 +234,7 @@ nav {
 
   @media screen and (max-width: 1199.20px) {
     .navbar-collapse {
-        background: #000000;
+        background: #f7f2ea;
     }
   }
   
@@ -253,21 +253,9 @@ nav {
 
   @media screen and (max-width: 1199.20px) {
     .navbar-dark .navbar-nav .nav-link {
-        width: 140px;
-        padding-right: 20px;
         margin-left: auto;
         margin-right: auto;
     }
-  }
-
-  .nav-contact .nav-link:before {
-    bottom: 6px !important;
-  }
-
-  @media screen and (max-width: 1199.20px) {
-    .nav-only .nav-link {
-        width: 230px !important;
-      }
   }
   
   .navbar-dark .navbar-nav .nav-link:hover {
@@ -276,7 +264,7 @@ nav {
   }
   
   .navbar-dark .navbar-nav .nav-link:focus {
-    color: #F5F5F5;
+    color: #0d6af6;
   }
 
   .navbar-dark .navbar-nav .nav-item .btn {
@@ -873,8 +861,8 @@ nav {
   } 
 
   .contact-container .social-footer a svg:hover {
-    color: #40F5D4;
-    box-shadow: 0px 4px 14px rgba(64, 245, 212, 0.3);
+    color: #E8DFD2;
+    box-shadow: 0px 4px 14px rgb(232, 223, 210, 0.3);
   }
 
   .contact-container h6 {

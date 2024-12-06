@@ -14,10 +14,10 @@ module.exports = {
         url: `https://facebook.com`,
       },
       {
-        url: `https://www.linkedin.com/company/`,
+        url: `https://www.instagram.com/isitjustme.online/`,
       },
       {
-        url: `https://twitter.com`,
+        url: `https://x.com/isitjustmeonln`,
       },
     ]
   },

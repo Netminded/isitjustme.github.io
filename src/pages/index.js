@@ -34,7 +34,7 @@ const IndexPage = () => {
                                 <h3>Create or join a community to monitor your Wi-Fi health instantly. Get the free Chrome extension for home and work.</h3>
                                 <div className="hero-cta">
                                     <div className="btn-container">
-                                        <a className="btn hero-btn-last" href="" target="_blank" rel="noreferrer">Add to Chrome</a> 
+                                        <a className="btn hero-btn-last" href="https://chromewebstore.google.com/detail/is-it-just-me/imifmefbechjmgapmijpniffjpncmkge" target="_blank" rel="noreferrer">Add to Chrome</a> 
                                     </div>
                                 </div>
                             </div>

@@ -8,7 +8,7 @@ import {
 
 const HowItWorksSection = () => {
     return (
-        <div id="services" className="services-container">
+        <div id="howItWorks" className="services-container">
             <div className="container">
                 <div className="row">
                     <div className="col-12 text-center">
