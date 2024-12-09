@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import { useState } from 'react'
 import { Waypoint } from 'react-waypoint'
 import { StaticImage } from 'gatsby-plugin-image'
-import HeroBg from "../images/IsItJustMe"
 import InstantAlerts from "../images/InstantAlerts.svg"
 import CommunitySharing from "../images/CommunitySharing.svg"
 import PrivacySecurity from "../images/PrivacySecurity.svg"
