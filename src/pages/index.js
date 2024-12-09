@@ -2,7 +2,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import { useState } from 'react'
 import { Waypoint } from 'react-waypoint'
-import { StaticImage } from 'gatsby-plugin-image'
+import HeroImage from "../images/IsItJustMeExtension.png"
 import InstantAlerts from "../images/InstantAlerts.svg"
 import CommunitySharing from "../images/CommunitySharing.svg"
 import PrivacySecurity from "../images/PrivacySecurity.svg"
@@ -53,12 +53,12 @@ const IndexPage = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-4">
-                                <StaticImage className="about-image-small" src="../images/IsItJustMeExtension.png" alt="Is It Just Me? Extension" />
+                                <img className="about-image-small" src={HeroImage} alt="Is It Just Me? Extension" />
                                 <h2 className="highlight-heading">Why You'll Love It</h2>
                                 <p><span className="text-accent">Real-Time Wi-Fi Status at a Glance:</span> Your Chrome browser icon changes color from Green (Everything's great), to Amber (Issues detected), to Red (Major outage). No more guessing if it's your Wi-Fi or the Internet.</p>
                             </div>
                             <div className="col-lg-4">
-                                <StaticImage className="about-image" src="../images/IsItJustMeExtension.png" alt="Is It Just Me? Extension" />
+                                <img className="about-image" src={HeroImage} alt="Is It Just Me? Extension" />
                             </div>
                             <div className="col-lg-4">
                                 <p><span className="text-accent">Visibility of Others' Status:</span> If you're online, you will be able to see if others in your group go offline. If you are offline, however, you won’t be able to tell the status of others. When delays occur, they'll be clearly visible if you're online.</p>
