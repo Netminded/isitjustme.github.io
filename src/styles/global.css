@@ -293,6 +293,7 @@ nav {
     height: 100%;
     display: flex;
     justify-content: center;
+    border-radius: 15px;
   }
   
   .hero-content {
@@ -380,6 +381,14 @@ nav {
         padding-right: 30px;
     }
   }
+
+  @media screen and (max-width: 991px) {
+    .hero-container h3 {
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 100%;
+    }
+  }
   
   @media screen and (max-width: 350px) {
     .hero-container h1 {
@@ -465,6 +474,29 @@ nav {
     }
   }
 
+  .about-image-small {
+    margin-top: -120%;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 500px) and (max-width: 767px) {
+    .about-image-small {
+      margin-top: -80%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .about-image-small {
+      margin-top: -70%;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .about-image-small {
+      display: none;
+    }
+  }
+
   .about-info {
     padding-top: 90px;
     padding-bottom: 80px;
@@ -503,15 +535,61 @@ nav {
     font-weight: 600;
   }
 
+  .about-image {
+    margin-top: -120%;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .about-image {
+      margin-top: -100%;
+    }  
+  }
+
+  @media screen and (max-width: 991px) {
+    .about-image {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .about-profiles {
+      margin: 0 20px;
+    }
+  }
+
   .features-list-container {
     background: #E8DFD2;
     border-radius: 15px;
-    padding: 90px 80px 80px 80px;
+    padding: 45px 20px 40px 20px;
+  }
+
+  @media screen and (min-width: 992px) {
+    .features-list-container {
+      padding: 90px 80px 80px 80px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .features-list-container .row {
+      margin-bottom: 40px;
+    }
+
+    .features-list-container img {
+      margin-left: 0;
+      margin-right: 25%;
+    }
   }
 
   .profile-first, .profile-middle, .profile-last {
     width: 100%;
     height: 100%;
+  }
+
+  @media screen and (max-width: 991px) {
+    .profile-text-container h5 {
+      margin-top: 20px;
+    }
   }
 
   .profile-text {
@@ -549,6 +627,12 @@ nav {
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media screen and (max-width: 991px) {
+    .services-container .highlight-heading {
+      margin-bottom: 0;
+    }
   }
 
   @media screen and (max-width: 452px) {
@@ -723,10 +807,14 @@ nav {
   }
 
   /* Who Is It For */
+  #whoIsThisFor {
+    margin: 0 20px;
+  }
+
   .whofor-container {
     background: #E8DFD2;
+    margin: 0 auto; 
     padding: 90px 20px 80px 20px;
-    margin: 0 auto;
     border-radius: 15px;
   }
 
@@ -742,6 +830,12 @@ nav {
   .whofor-container .col-lg-4 {
     padding-left: 5%;
     padding-right: 5%;
+  }
+
+  @media screen and (max-width: 991px) {
+    .whofor-container .col-lg-4 {
+      margin-bottom: 20px;
+    }
   }
 
   .whofor-container .fa-house-user, .whofor-container .fa-house-laptop, .whofor-container .fa-building {
@@ -766,6 +860,7 @@ nav {
     padding: 90px 40px 80px 40px;
     border-radius: 15px;
     margin: 0 auto 20px auto;
+    width: calc(100% - 40px);
   }
 
   @media screen and (max-width: 600px) {

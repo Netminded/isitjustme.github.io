@@ -54,11 +54,12 @@ const IndexPage = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-4">
+                                <StaticImage className="about-image-small" src="../images/IsItJustMeExtension.png" alt="Is It Just Me? Extension" />
                                 <h2 className="highlight-heading">Why You'll Love It</h2>
                                 <p><span className="text-accent">Real-Time Wi-Fi Status at a Glance:</span> Your Chrome browser icon changes color from Green (Everything's great), to Amber (Issues detected), to Red (Major outage). No more guessing if it's your Wi-Fi or the Internet.</p>
                             </div>
                             <div className="col-lg-4">
-
+                                <StaticImage className="about-image" src="../images/IsItJustMeExtension.png" alt="Is It Just Me? Extension" />
                             </div>
                             <div className="col-lg-4">
                                 <p><span className="text-accent">Visibility of Others' Status:</span> If you're online, you will be able to see if others in your group go offline. If you are offline, however, you won’t be able to tell the status of others. When delays occur, they'll be clearly visible if you're online.</p>
@@ -83,7 +84,7 @@ const IndexPage = () => {
                                 </div>
                             </div>
                             <div className="col-md-8 profile-text">
-                                <div className="profile-text-container ms-5">
+                                <div className="profile-text-container ms-lg-5">
                                     <h5>Instant Alerts</h5>
                                     <p>Get visual feedback when your Wi-Fi or Internet connection drops or weakens.</p>
                                 </div>
@@ -98,7 +99,7 @@ const IndexPage = () => {
                                 </div>
                             </div>
                             <div className="col-md-8 order-md-1 profile-text">
-                                <div className="profile-text-container ms-5 me-5">
+                                <div className="profile-text-container ms-lg-5 me-lg-5">
                                     <h5>Community Sharing</h5>
                                     <p>Easily connect with others in your group to check if they're facing the same connectivity issues. While online, you'll be able to see if others in your group go offline (if you're offline, you can't see their status).</p>
                                 </div>
@@ -113,7 +114,7 @@ const IndexPage = () => {
                                 </div>
                             </div>
                             <div className="col-md-8 profile-text">
-                                <div className="profile-text-container ms-5">
+                                <div className="profile-text-container ms-lg-5">
                                     <h5>Privacy First</h5>
                                     <p>We don’t store any of your personal data beyond your public IP address. We don’t store any other personal information. Your group is anonymous subject to your choice of group name, and your connection is secure.</p>
                                 </div>
